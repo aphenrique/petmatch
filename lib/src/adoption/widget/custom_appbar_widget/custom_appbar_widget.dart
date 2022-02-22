@@ -1,14 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:petmatch/src/core/colors/app_colors.dart';
+import 'package:petmatch/src/home/stores/drawer_store.dart';
+import 'package:provider/provider.dart';
 
 class CustomAppbarWidget extends StatelessWidget {
   const CustomAppbarWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final drawerStore = context.read<DrawerStore>();
+
     return ListTile(
       leading: IconButton(
-        onPressed: () {},
+        onPressed: () {
+          drawerStore.alternateDrawer();
+        },
         icon: const Icon(
           Icons.clear_all_rounded,
           size: 36,
