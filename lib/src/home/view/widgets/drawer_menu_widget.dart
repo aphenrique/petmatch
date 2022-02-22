@@ -20,7 +20,7 @@ class DrawerMenuWidget extends StatelessWidget {
                 fontWeight: FontWeight.w500),
           ),
         ),
-        SizedBox(height: 20),
+        SizedBox(height: 16),
         ListTile(
           leading: Icon(Icons.attach_money_rounded, color: Colors.white38),
           title: Text(
@@ -31,7 +31,7 @@ class DrawerMenuWidget extends StatelessWidget {
                 fontWeight: FontWeight.w500),
           ),
         ),
-        SizedBox(height: 20),
+        SizedBox(height: 16),
         ListTile(
           leading: Icon(Icons.add_circle, color: Colors.white38),
           title: Text(
@@ -42,7 +42,7 @@ class DrawerMenuWidget extends StatelessWidget {
                 fontWeight: FontWeight.w500),
           ),
         ),
-        SizedBox(height: 20),
+        SizedBox(height: 16),
         ListTile(
           leading: Icon(Icons.favorite_rounded, color: Colors.white38),
           title: Text(
@@ -53,7 +53,7 @@ class DrawerMenuWidget extends StatelessWidget {
                 fontWeight: FontWeight.w500),
           ),
         ),
-        SizedBox(height: 20),
+        SizedBox(height: 16),
         ListTile(
           leading: Icon(Icons.mail, color: Colors.white38),
           title: Text(
@@ -64,7 +64,7 @@ class DrawerMenuWidget extends StatelessWidget {
                 fontWeight: FontWeight.w500),
           ),
         ),
-        SizedBox(height: 20),
+        SizedBox(height: 16),
         ListTile(
           leading: Icon(Icons.person, color: Colors.white38),
           title: Text(

@@ -8,7 +8,7 @@ class SettingsMenuWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 50,
-      width: MediaQuery.of(context).size.width * 0.5,
+      width: MediaQuery.of(context).size.width * 0.6,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

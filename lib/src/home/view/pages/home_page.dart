@@ -26,11 +26,7 @@ class _HomePageState extends State<HomePage>
     drawerStore = context.read<DrawerStore>();
 
     drawerStore.addListener(() {
-      if (drawerStore.isOpen) {
-        controller.reverse();
-      } else {
-        controller.forward();
-      }
+      controller.reverse();
     });
   }
 
@@ -44,7 +40,7 @@ class _HomePageState extends State<HomePage>
           drawerStore.alternateDrawer();
         }
 
-        return true;
+        return false;
       },
       child: Scaffold(
         backgroundColor: AppColors.primaryColor,

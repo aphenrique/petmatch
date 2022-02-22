@@ -10,18 +10,19 @@ class DetailPetInfoWidget extends StatelessWidget {
 
     return Container(
       width: size.width * 0.8,
-      height: size.height * 0.16,
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(30),
-          color: Colors.white,
-          boxShadow: const [
-            BoxShadow(
-                color: Colors.black26,
-                offset: Offset(0, 2),
-                blurRadius: 20,
-                blurStyle: BlurStyle.outer),
-          ]),
+        borderRadius: BorderRadius.circular(30),
+        color: Colors.white,
+        boxShadow: const [
+          BoxShadow(
+            color: Colors.black26,
+            offset: Offset(0, 2),
+            blurRadius: 20,
+            blurStyle: BlurStyle.outer,
+          ),
+        ],
+      ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.start,

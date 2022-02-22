@@ -48,7 +48,7 @@ class PetBriefingWidget extends StatelessWidget {
                   child: Container(
                     width: double.infinity,
                     height: size.height * 0.18,
-                    padding: const EdgeInsets.all(16),
+                    padding: const EdgeInsets.all(12),
                     decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
@@ -63,69 +63,71 @@ class PetBriefingWidget extends StatelessWidget {
                         ),
                       ],
                     ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Row(
-                          children: [
-                            Expanded(
-                              child: Text(
-                                pet.name,
-                                style: const TextStyle(
-                                  color: AppColors.textHeader2Color,
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.w700,
+                    child: SingleChildScrollView(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Text(
+                                  pet.name,
+                                  style: const TextStyle(
+                                    color: AppColors.textHeader2Color,
+                                    fontSize: 24,
+                                    fontWeight: FontWeight.w700,
+                                  ),
                                 ),
                               ),
-                            ),
-                            Transform.rotate(
-                              angle: pet.gender == 'm' ? 0 : 4,
-                              child: Icon(
-                                pet.gender == 'm' ? Icons.male : Icons.female,
-                                size: 32,
-                                color: AppColors.inactiveIconsColor,
-                              ),
-                            ),
-                          ],
-                        ),
-                        Text(
-                          pet.breed,
-                          style: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w500,
-                            color: AppColors.textHeader2Color,
-                          ),
-                        ),
-                        Text(
-                          "${pet.age} years old",
-                          style: const TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w500,
-                            color: AppColors.textColor,
-                          ),
-                        ),
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            const Icon(
-                              Icons.location_on,
-                              size: 20,
-                              color: AppColors.primaryColor,
-                            ),
-                            Expanded(
-                              child: Text(
-                                "Distance: ${pet.distance} km",
-                                style: const TextStyle(
-                                  color: AppColors.textColor,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w700,
+                              Transform.rotate(
+                                angle: pet.gender == 'm' ? 0 : 4,
+                                child: Icon(
+                                  pet.gender == 'm' ? Icons.male : Icons.female,
+                                  size: 32,
+                                  color: AppColors.inactiveIconsColor,
                                 ),
                               ),
+                            ],
+                          ),
+                          Text(
+                            pet.breed,
+                            style: const TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w500,
+                              color: AppColors.textHeader2Color,
                             ),
-                          ],
-                        ),
-                      ],
+                          ),
+                          Text(
+                            "${pet.age} years old",
+                            style: const TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w500,
+                              color: AppColors.textColor,
+                            ),
+                          ),
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              const Icon(
+                                Icons.location_on,
+                                size: 20,
+                                color: AppColors.primaryColor,
+                              ),
+                              Expanded(
+                                child: Text(
+                                  "Distance: ${pet.distance} km",
+                                  style: const TextStyle(
+                                    color: AppColors.textColor,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w700,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),

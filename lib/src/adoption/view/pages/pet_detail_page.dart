@@ -23,7 +23,7 @@ class PetDetailPage extends StatelessWidget {
           const DetailPageBackground(),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisSize: MainAxisSize.max,
+            mainAxisSize: MainAxisSize.min,
             children: [
               Image.asset(pet.photo, height: size.height * 0.45),
               const DetailPetInfoWidget(),
