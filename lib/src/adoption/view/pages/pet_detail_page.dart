@@ -25,7 +25,7 @@ class PetDetailPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
             children: [
-              Image.asset(pet.photo, height: size.height * 0.45),
+              Image.asset(pet.photo, height: size.height * 0.4),
               const DetailPetInfoWidget(),
               const Padding(
                 padding: EdgeInsets.all(8.0),
@@ -128,7 +128,21 @@ class PetDetailPage extends StatelessWidget {
                 ),
               )
             ],
-          )
+          ),
+          SafeArea(
+            child: Align(
+              alignment: Alignment.topLeft,
+              child: IconButton(
+                onPressed: () {
+                  Navigator.maybePop(context);
+                },
+                icon: const Icon(
+                  Icons.arrow_back_rounded,
+                  color: Colors.grey,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );

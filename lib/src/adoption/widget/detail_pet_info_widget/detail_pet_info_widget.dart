@@ -9,7 +9,7 @@ class DetailPetInfoWidget extends StatelessWidget {
     final Size size = MediaQuery.of(context).size;
 
     return Container(
-      width: size.width * 0.8,
+      width: size.width * 0.9,
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30),
@@ -49,6 +49,7 @@ class DetailPetInfoWidget extends StatelessWidget {
               ),
             ],
           ),
+          const SizedBox(height: 8),
           Row(
             children: const [
               Expanded(
@@ -71,6 +72,7 @@ class DetailPetInfoWidget extends StatelessWidget {
               ),
             ],
           ),
+          const SizedBox(height: 8),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: const [
@@ -84,7 +86,7 @@ class DetailPetInfoWidget extends StatelessWidget {
                   "5 Bulvarna-Kudriavska Street, Kyvi",
                   style: TextStyle(
                     color: AppColors.textColor,
-                    fontSize: 16,
+                    fontSize: 15,
                     fontWeight: FontWeight.w700,
                   ),
                 ),

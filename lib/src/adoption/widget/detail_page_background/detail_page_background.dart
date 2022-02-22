@@ -9,11 +9,11 @@ class DetailPageBackground extends StatelessWidget {
     return Column(
       children: [
         Container(
-          height: heigth * 0.55,
+          height: heigth * 0.5,
           color: const Color(0XFFacbfc4),
         ),
         Container(
-          height: heigth * 0.45,
+          height: heigth * 0.5,
           color: Colors.white,
         ),
       ],
